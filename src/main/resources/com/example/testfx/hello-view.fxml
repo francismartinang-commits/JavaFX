@@ -6,11 +6,14 @@
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.testfx.HelloController">
+      fx:controller="com.example.testfx.MinimalistHelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="greetingLabel"
+           text="Press the button to see the greeting."/>
+    <Button text="Say Hello"
+            onAction="#onHelloButtonClick"/>
+
 </VBox>
