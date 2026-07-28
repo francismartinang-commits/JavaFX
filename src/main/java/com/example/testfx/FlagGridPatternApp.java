@@ -156,3 +156,34 @@ public class FlagGridPatternApp extends Application {
         stage.show();
     }
 
+    // =========================================================================
+    // 4. O-Pattern (BorderPane -> Center StackPane)
+    // =========================================================================
+    private void showOPatternStage(String title, Stage stage) {
+        StackPane stackPane = new StackPane();
+        double gapX = 15;
+        double gapY = 15;
+        stackPane.setMaxSize(FLAG_WIDTH * 3 + gapX * 2, FLAG_HEIGHT * 3 + gapY * 2);
+
+        Canvas tl = createFlag(); StackPane.setAlignment(tl, Pos.TOP_LEFT);
+        Canvas tc = createFlag(); StackPane.setAlignment(tc, Pos.TOP_CENTER);
+        Canvas tr = createFlag(); StackPane.setAlignment(tr, Pos.TOP_RIGHT);
+
+        Canvas cl = createFlag(); StackPane.setAlignment(cl, Pos.CENTER_LEFT);
+        Canvas cr = createFlag(); StackPane.setAlignment(cr, Pos.CENTER_RIGHT);
+
+        Canvas bl = createFlag(); StackPane.setAlignment(bl, Pos.BOTTOM_LEFT);
+        Canvas bc = createFlag(); StackPane.setAlignment(bc, Pos.BOTTOM_CENTER);
+        Canvas br = createFlag(); StackPane.setAlignment(br, Pos.BOTTOM_RIGHT);
+
+        stackPane.getChildren().addAll(tl, tc, tr, cl, cr, bl, bc, br);
+
+        BorderPane borderPane = new BorderPane();
+        borderPane.setCenter(stackPane);
+
+        Scene scene = new Scene(borderPane, 700, 500);
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
