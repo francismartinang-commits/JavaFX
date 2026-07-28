@@ -23,3 +23,8 @@ public class FlagGridPatternApp extends Application {
         showXPatternStage("AnchorPane X-Pattern", new Stage());
     }
 
+    private Canvas createFlag() {
+        PhilippineFlagApp flagGenerator = new PhilippineFlagApp(FLAG_WIDTH, FLAG_HEIGHT);
+        return flagGenerator.drawFlag(FLAG_WIDTH, FLAG_HEIGHT, 0, 0);
+    }
+
