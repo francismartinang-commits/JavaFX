@@ -187,3 +187,40 @@ public class FlagGridPatternApp extends Application {
         stage.show();
     }
 
+    // =========================================================================
+    // 5. X-Pattern (AnchorPane)
+    // =========================================================================
+    private void showXPatternStage(String title, Stage stage) {
+        AnchorPane anchorPane = new AnchorPane();
+
+
+        double gapX = 0;
+        double gapY = 0;
+
+        double startX = 100;
+        double startY = 125;
+
+        // 5x5 Grid representation forming the 'X' shape
+        int[][] xCoordinates = {
+                {0, 4},
+                {1, 3},
+                {2},
+                {1, 3},
+                {0, 4}
+        };
+
+        for (int row = 0; row < xCoordinates.length; row++) {
+            for (int col : xCoordinates[row]) {
+                Canvas flag = createFlag();
+                AnchorPane.setTopAnchor(flag, startY + row * (FLAG_HEIGHT + gapY));
+                AnchorPane.setLeftAnchor(flag, startX + col * (FLAG_WIDTH + gapX));
+                anchorPane.getChildren().add(flag);
+            }
+        }
+
+        Scene scene = new Scene(anchorPane, 700, 500);
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
