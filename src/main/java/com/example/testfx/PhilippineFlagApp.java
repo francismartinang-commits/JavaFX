@@ -1,5 +1,8 @@
 package com.example.testfx;
 
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+
 /**
  * Simple PhilippineFlag class creates a drawing of the Philippine flag on a
  * JavaFX Canvas.
@@ -18,7 +21,7 @@ public class PhilippineFlagApp {
      * @param canvasWidth  The width of the canvas in pixels
      * @param canvasHeight The height of the canvas in pixels
      */
-    public PhilippineFlag(int canvasWidth, int canvasHeight) {
+    public PhilippineFlagApp(int canvasWidth, int canvasHeight) {
         // Create the canvas where we'll draw the flag
         this.canvas = new Canvas(canvasWidth, canvasHeight);
     }
