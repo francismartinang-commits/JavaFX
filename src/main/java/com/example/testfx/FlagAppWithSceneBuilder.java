@@ -6,12 +6,23 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-// Note: This file has same code as the original HelloApplication.java
+
 public class FlagAppWithSceneBuilder extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FlagAppWithSceneBuilder.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello! I am YOUR NAME!");
+        FXMLLoader fxmlLoader = new FXMLLoader(
+                FlagAppWithSceneBuilder.class.getResource("flag.fxml")
+        );
+
+        Scene scene = new Scene(fxmlLoader.load(), 400, 200);
+
+        stage.setTitle("Philippine Flag - Nash Paragas");
         stage.setScene(scene);
-        stage.show(); } }
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
