@@ -50,3 +50,56 @@ public class FlagGridPatternApp extends Application {
         stage.show();
     }
 
+    // =========================================================================
+    // 2. Diamond Pattern (StackPane -> BorderPane -> HBox/VBox)
+    // =========================================================================
+    private void showDiamondPatternStage(String title, Stage stage) {
+        BorderPane borderPane = new BorderPane();
+        borderPane.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
+
+        HBox topBox = new HBox();
+        topBox.setAlignment(Pos.CENTER);
+        topBox.getChildren().add(createFlag());
+        BorderPane.setMargin(topBox, new Insets(0, 0, 20, 0));
+
+        HBox bottomBox = new HBox();
+        bottomBox.setAlignment(Pos.CENTER);
+        bottomBox.getChildren().add(createFlag());
+        BorderPane.setMargin(bottomBox, new Insets(20, 0, 0, 0));
+
+        VBox leftBox = new VBox();
+        leftBox.setAlignment(Pos.CENTER);
+        leftBox.getChildren().add(createFlag());
+        BorderPane.setMargin(leftBox, new Insets(0, 40, 0, 0));
+
+        VBox rightBox = new VBox();
+        rightBox.setAlignment(Pos.CENTER);
+        rightBox.getChildren().add(createFlag());
+        BorderPane.setMargin(rightBox, new Insets(0, 0, 0, 40));
+
+        HBox centerRow1 = new HBox(40);
+        centerRow1.setAlignment(Pos.CENTER);
+        centerRow1.getChildren().addAll(createFlag(), createFlag());
+
+        HBox centerRow2 = new HBox(40);
+        centerRow2.setAlignment(Pos.CENTER);
+        centerRow2.getChildren().addAll(createFlag(), createFlag());
+
+        VBox centerBox = new VBox(20);
+        centerBox.setAlignment(Pos.CENTER);
+        centerBox.getChildren().addAll(centerRow1, centerRow2);
+
+        borderPane.setTop(topBox);
+        borderPane.setBottom(bottomBox);
+        borderPane.setLeft(leftBox);
+        borderPane.setRight(rightBox);
+        borderPane.setCenter(centerBox);
+
+        StackPane root = new StackPane(borderPane);
+
+        Scene scene = new Scene(root, 700, 500);
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
