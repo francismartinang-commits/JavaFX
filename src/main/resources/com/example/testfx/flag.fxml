@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/25">
-    <!-- #TODO: Put the flag components here -->
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Blue Top Stripe -->
+        <Rectangle fill="#0038A8" height="100.0" width="400.0" />
+
+        <!-- Red Bottom Stripe -->
+        <Rectangle fill="#CE1126" height="100.0" layoutY="100.0" width="400.0" />
+
+        <!-- White Triangle -->
+        <Polygon fill="WHITE" points="0.0, 0.0, 173.2, 100.0, 0.0, 200.0" />
+
+        <!-- Sun (Center Circle) -->
+        <Circle fill="#FCD116" layoutX="55.0" layoutY="100.0" radius="18.0" />
+
+        <!-- Top Star -->
+        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="18.0" layoutY="25.0" />
+
+        <!-- Bottom Star -->
+        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="18.0" layoutY="175.0" />
+
+        <!-- Right Star -->
+        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="145.0" layoutY="100.0" />
+    </children>
 </AnchorPane>
