@@ -28,3 +28,25 @@ public class FlagGridPatternApp extends Application {
         return flagGenerator.drawFlag(FLAG_WIDTH, FLAG_HEIGHT, 0, 0);
     }
 
+    // =========================================================================
+    // 1. GridPane (5x5 Pattern)
+    // =========================================================================
+    private void showGridPatternStage(String title, Stage stage) {
+        GridPane gridPane = new GridPane();
+        gridPane.setAlignment(Pos.CENTER);
+        gridPane.setHgap(15);
+        gridPane.setVgap(15);
+        gridPane.setPadding(new Insets(20));
+
+        for (int row = 0; row < 5; row++) {
+            for (int col = 0; col < 5; col++) {
+                gridPane.add(createFlag(), col, row);
+            }
+        }
+
+        Scene scene = new Scene(gridPane, 700, 500);
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
