@@ -10,6 +10,6 @@ public class MinimalistHelloController {
 
     @FXML
     protected void onHelloButtonClick() {
-        greetingLabel.setText("Hello, Nash Paragas!");
+        greetingLabel.setText("Hello LBYCPOB OOP, I am Nash Paragas!");
     }
 }
