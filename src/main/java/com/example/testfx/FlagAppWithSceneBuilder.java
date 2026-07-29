@@ -17,7 +17,7 @@ public class FlagAppWithSceneBuilder extends Application {
 
         Scene scene = new Scene(fxmlLoader.load(), 400, 200);
 
-        stage.setTitle("Philippine Flag - Nash Paragas");
+        stage.setTitle("Philippine Flag - Group 10");
         stage.setScene(scene);
         stage.show();
     }
