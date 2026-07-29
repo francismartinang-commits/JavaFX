@@ -2,6 +2,7 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.SVGPath?>
@@ -19,6 +20,16 @@
 
         <!-- Sun (Center Circle) -->
         <Circle fill="#FCD116" layoutX="55.0" layoutY="100.0" radius="18.0" />
+
+        <!-- Sun Beams -->
+        <Line endX="55.0" endY="62.0" startX="55.0" startY="75.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="55.0" endY="138.0" startX="55.0" startY="125.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="17.0" endY="100.0" startX="30.0" startY="100.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="93.0" endY="100.0" startX="80.0" startY="100.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="28.0" endY="73.0" startX="37.0" startY="82.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="82.0" endY="73.0" startX="73.0" startY="82.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="28.0" endY="127.0" startX="37.0" startY="118.0" stroke="#FCD116" strokeWidth="3.0" />
+        <Line endX="82.0" endY="127.0" startX="73.0" startY="118.0" stroke="#FCD116" strokeWidth="3.0" />
 
         <!-- Top Star -->
         <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="18.0" layoutY="25.0" />
