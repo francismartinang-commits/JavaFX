@@ -32,10 +32,10 @@
         <Line endX="82.0" endY="127.0" startX="73.0" startY="118.0" stroke="#FCD116" strokeWidth="3.0" />
 
         <!-- Top Star -->
-        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="18.0" layoutY="25.0" />
+        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="14.0" layoutY="22.0" />
 
         <!-- Bottom Star -->
-        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="18.0" layoutY="175.0" />
+        <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="14.0" layoutY="179.0" />
 
         <!-- Right Star -->
         <SVGPath content="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.6,1 L 5.2,7 L 0,3.6 L -5.2,7 L -3.6,1 L -8,-2.4 L -2.4,-2.4 Z" fill="#FCD116" layoutX="145.0" layoutY="100.0" />
